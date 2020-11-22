@@ -1,0 +1,76 @@
+# - Jhinku Comment
+# Commenting in R - Documentation 
+# Shorcuts - Ctrl + L for clearing the Console
+# Ctrl + L for Executing a Particular Line of Code
+
+# Creating Simple Objects and Doing Mathematical Calculations 
+a = 5
+# Codes are read from right to left 
+# 1. Command Line Interface
+b = 10
+
+# Objects need not be explicitly defined
+class (a) 
+a = "Hello"
+class (a)
+x = 10
+y = 15
+x+y
+x-y
+x*y
+x/y
+sqrt(x)
+x^y
+exp(x)
+log(x, base=exp(1))
+log10(x)
+help("log")
+# When you write a cmd for help, you will find the entire log in the bottom right
+#FUNCTIONS IN R
+divider = function(x,y)
+{
+  result = x*y
+  print(result)
+}
+divider(50,10)        
+divider(60,80)
+
+#CONCATENATION AND ARRAYS
+f = c(1,2,3,4,5)
+# <- is the same as =
+f
+f = f+4
+f
+d= f/4
+d
+#Listing and Removing Objects
+ls()
+rm(a)
+#Check the environment now
+
+# Categorical Variables - Words/String, Classification
+# Logical Variables - TRUE(Assigned value of 1) and FALSE(Assigned Value of 0)
+TRUE * 5
+
+K = TRUE
+class(k) #Case-Sensitive and thus, returns an error
+class(K) #Output of 'Logical'
+is.logical(K) #Output of 'TRUE'
+
+#Date - Starting Date (1970)- Numeric Value
+#In R- 1 Jan 1970
+#Date - mm/dd/yyyy
+#POSIXct - Date plus Time.
+
+date1 = as.Date("2012-06-28") #Keep the format in mind
+date1
+class(date1)
+as.numeric(date1) #Check the numerical value of date1
+15519/365
+#Go for Auto-Complete Option if you forget what the code line is
+
+date2 = as.POSIXct("2012-06-28 17:24")
+
+date2 = as.POSIXct("2012-06-28 17:24")
+date2
+class(date2)
